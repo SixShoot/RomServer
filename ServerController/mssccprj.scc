@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[RAServerController.sln]
+SCC_Aux_Path = "\\scm3\SourceSafe\Sourcesafe"
+SCC_Project_Name = "$/Other/RAServerController/RAServerController", UODBAAAA
+
+[RAServerController.vcproj]
+SCC_Aux_Path = "\\scm3\SourceSafe\Sourcesafe"
+SCC_Project_Name = "$/Other/RAServerController/RAServerController", UODBAAAA

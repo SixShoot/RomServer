@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Union">
+      <UniqueIdentifier>{540c0b68-2924-4116-a252-7c7ebc4a3b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\NetWaker">
+      <UniqueIdentifier>{1ee5b217-4bb1-485e-bdcd-eb055f7cd862}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KeyBoardCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyCliCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyGSrvCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyMainClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxySwitchCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WakerProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeyBoardCmd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyClass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyMainClass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackage.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackageDef.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VTune\WakerProxy.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WakerProxy.rc" />
+  </ItemGroup>
+</Project>

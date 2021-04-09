@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AccountAgent_Srv">
+      <UniqueIdentifier>{40ff6d63-91d2-4343-b138-b15796991784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IAccountPlugin">
+      <UniqueIdentifier>{c5649a6f-7a92-4eed-a5e2-a734f21edc87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccountManage">
+      <UniqueIdentifier>{643ada12-58af-4879-bb70-3866de489492}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountAgent_Srv\AccountPackage.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountPackageDef.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountSrvclass.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountSrvDef.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AcSrvMainclass.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\KeyBoardCmd.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="IAccountPlugin\AccountBaseDef.h">
+      <Filter>IAccountPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="IAccountPlugin\IAccountPlugin.h">
+      <Filter>IAccountPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountManage\AccountManage.h">
+      <Filter>AccountManage</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountAgent_Srv\AccountSrvclass.cpp">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent_Srv\AccountSrvDef.Cpp">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent_Srv\AcSrvMainclass.cpp">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent_Srv\KeyBoardCmd.cpp">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClCompile>
+    <ClCompile Include="IAccountPlugin\AccountBaseDef.cpp">
+      <Filter>IAccountPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="iaccountplugin\IAccountPlugin.cpp">
+      <Filter>IAccountPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountManage\AccountManage.cpp">
+      <Filter>AccountManage</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AccountAgent.rc" />
+  </ItemGroup>
+</Project>

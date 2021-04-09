@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MainProc">
+      <UniqueIdentifier>{7b850ba8-85b6-4163-a707-55ce589b4938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc\LuaPlot">
+      <UniqueIdentifier>{a066c2c8-56a7-4c9e-8f11-ca026d67c32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc\OutputMsgManage">
+      <UniqueIdentifier>{783ef5d6-5f16-483b-a643-499ca498a2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc\BaseItemObject">
+      <UniqueIdentifier>{10e67fb3-197d-4838-8d74-70e7cf12bb63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc\ClientInfo">
+      <UniqueIdentifier>{febf8ced-7755-4ef1-ba09-a3b474d2c831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc\Captcha">
+      <UniqueIdentifier>{74ce4d7e-05f5-4db6-a9bf-bd4ba8a56b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member">
+      <UniqueIdentifier>{1604c2e4-f618-4fd3-835f-ce64579424e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_Login">
+      <UniqueIdentifier>{5e3f5b3a-1c00-4600-a56f-67abf512d5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_ServerList">
+      <UniqueIdentifier>{aa882850-d83c-4639-b51b-e6571fb03b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_DCBase">
+      <UniqueIdentifier>{09c3fd70-9741-4876-9fed-7ac31307ad6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_ZoneStatus">
+      <UniqueIdentifier>{811148a7-39ff-4c8f-9bc3-ff39adc7db72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_ChannelBase">
+      <UniqueIdentifier>{3a68f803-3fb9-4286-a347-e2aff81e2324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_GMTools">
+      <UniqueIdentifier>{deb369a2-d812-4a55-8558-e19d897a051a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWaker_Member\Net_Other">
+      <UniqueIdentifier>{90ac2e55-d547-4dc1-ac72-412b9f1ab2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union">
+      <UniqueIdentifier>{cf9ceac4-efb5-455f-9e99-e51e329e2693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\AllOnlinePlayerInfo">
+      <UniqueIdentifier>{ce931763-5b70-4fb6-ae24-f87640cf2131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\NetWaker">
+      <UniqueIdentifier>{3c24801f-513e-4af3-a7f9-7a7d703f1244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\PG">
+      <UniqueIdentifier>{2c481d96-9137-47b1-9a99-ce4207eb71ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\RoleData">
+      <UniqueIdentifier>{1fb7078b-3eb7-4dcc-a372-a6ae98c079e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainProc\Global.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="mainproc\GlobalBase.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc\KeyBoardCmd.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterServer.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc\LuaPlot\LuaPlot.cpp">
+      <Filter>MainProc\LuaPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc\OutputMsgManager\OutputMsgManager.cpp">
+      <Filter>MainProc\OutputMsgManage</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc\BaseItemObject\M_BaseItemObject.cpp">
+      <Filter>MainProc\BaseItemObject</Filter>
+    </ClCompile>
+    <ClCompile Include="mainproc\ClientInfo\ClientInfo.cpp">
+      <Filter>MainProc\ClientInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProc\Captcha\CaptchaGenerator.cpp">
+      <Filter>MainProc\Captcha</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_Login\NetSrv_Master_Login.cpp">
+      <Filter>NetWaker_Member\Net_Login</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_Login\NetSrv_Master_Login_Child.cpp">
+      <Filter>NetWaker_Member\Net_Login</Filter>
+    </ClCompile>
+    <ClCompile Include="netwalker_member\Net_ServerList\Net_ServerList.cpp">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="netwalker_member\Net_ServerList\Net_ServerList_Child.cpp">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="netwalker_member\net_serverlist\Net_ServerList_Child_Master.cpp">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_DCBase\Net_DCBase.cpp">
+      <Filter>NetWaker_Member\Net_DCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_DCBase\Net_DCBaseChild.cpp">
+      <Filter>NetWaker_Member\Net_DCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_ZoneStatus\NetMaster_ZoneStatus.cpp">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_ZoneStatus\NetMaster_ZoneStatus_Child.cpp">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayer.cpp">
+      <Filter>NetWaker_Member\Net_ChannelBase</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayerChild.cpp">
+      <Filter>NetWaker_Member\Net_ChannelBase</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_GMTools\NetSrv_GMTools.cpp">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\Net_GMTools\NetSrv_GMToolsChild.cpp">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\net_other\Net_Other.cpp">
+      <Filter>NetWaker_Member\Net_Other</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWalker_Member\net_other\Net_OtherChild.cpp">
+      <Filter>NetWaker_Member\Net_Other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\ObjectStructEx.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Check.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Event.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_ItemProc.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_NetFunction.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Normal.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Save.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Script.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Search.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Setting.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_STFunc.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Utility.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_ValueCal.cxx">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleAttr.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleData.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleDataEx.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\CampStatute.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\RoleData\ObjectDataClass.cpp">
+      <Filter>Union\RoleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerProxyCallback.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerSwitchCallback.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\GSrvNetWake.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\GSrvNetWakerClass.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\AllOnlinePlayerInfo\AllOnlinePlayerInfo.cpp">
+      <Filter>Union\AllOnlinePlayerInfo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainProc\Global.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="mainproc\GlobalBase.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc\KeyBoardCmd.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc\LuaPlot\LuaPlot.h">
+      <Filter>MainProc\LuaPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc\OutputMsgManager\OutputMsgManager.h">
+      <Filter>MainProc\OutputMsgManage</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc\BaseItemObject\M_BaseItemObject.h">
+      <Filter>MainProc\BaseItemObject</Filter>
+    </ClInclude>
+    <ClInclude Include="mainproc\ClientInfo\ClientInfo.h">
+      <Filter>MainProc\ClientInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProc\Captcha\CaptchaGenerator.h">
+      <Filter>MainProc\Captcha</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\NetWakerMasterSrvInc.h">
+      <Filter>NetWaker_Member</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\NetWakerPGEnum.h">
+      <Filter>NetWaker_Member</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_Login\NetSrv_Master_Login.h">
+      <Filter>NetWaker_Member\Net_Login</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_Login\NetSrv_Master_Login_Child.h">
+      <Filter>NetWaker_Member\Net_Login</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_Login\PG_Login.h">
+      <Filter>NetWaker_Member\Net_Login</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\Net_ServerList\Net_ServerList.h">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\Net_ServerList\Net_ServerList_Child.h">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\Net_ServerList\PG_ServerList.h">
+      <Filter>NetWaker_Member\Net_ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_DCBase\Net_DCBase.h">
+      <Filter>NetWaker_Member\Net_DCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_DCBase\Net_DCBaseChild.h">
+      <Filter>NetWaker_Member\Net_DCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_DCBase\PG_DCBase.h">
+      <Filter>NetWaker_Member\Net_DCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ZoneStatus\NetMaster_ZoneStatus.h">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ZoneStatus\NetMaster_ZoneStatus_Child.h">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\net_zonestatus\PG_BTI.h">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="netwalker_member\net_zonestatus\PG_Talk.h">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ZoneStatus\PG_ZoneStatus.h">
+      <Filter>NetWaker_Member\Net_ZoneStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayer.h">
+      <Filter>NetWaker_Member\Net_ChannelBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayerChild.h">
+      <Filter>NetWaker_Member\Net_ChannelBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\PG_ChannelBase.h">
+      <Filter>NetWaker_Member\Net_ChannelBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_GMTools\NetSrv_GMTools.h">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_GMTools\NetSrv_GMToolsChild.h">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_GMTools\PG_GMTools.h">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\Net_GMTools\PG_GMToolsStruct.h">
+      <Filter>NetWaker_Member\Net_GMTools</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\net_other\Net_Other.h">
+      <Filter>NetWaker_Member\Net_Other</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\net_other\Net_OtherChild.h">
+      <Filter>NetWaker_Member\Net_Other</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWalker_Member\net_other\PG_Other.h">
+      <Filter>NetWaker_Member\Net_Other</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ChannelBase.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_CliConnect.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_CultivatePet.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_DCBase.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_DepartmentStore.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_EQ.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Festival.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_FriendList.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Gather.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GlobalInfo.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GMTools.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GMToolsStruct.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Guild.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GuildHouses.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GuildHousesWar.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Houses.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ImportBoard.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Instance.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Item.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_DynamicBuffer.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_PackageBufferInfo.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_PackageDefine_Auto.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_StaticBuffer.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Login.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Lottery.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Magic.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Mail.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Move.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Other.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PartExchangeData.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PartitionBase.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Party.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PK.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PublicEncounter.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Recipe.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_RoleValue.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Script.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ServerList.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Shop.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_SmallGame.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Talk.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Teleport.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Trade.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Treasure.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ZoneStatus.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\NetWakerPGEnum.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_AC.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Attack.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_AuroraAgent.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BattleGround.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BG_GuildWar.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BG_GuildWarDef.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Billboard.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Billing.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Bot.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BTI.h">
+      <Filter>Union\PG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectStruct.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectStructEx.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleAttr.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleBaseDef.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleBaseInc.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleData.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleDataEx.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\CampStatute.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectDataClass.h">
+      <Filter>Union\RoleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\GSrvNetWakerClass.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackage.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackageDef.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\GSrvNetWaker.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\AllOnlinePlayerInfo\AllOnlinePlayerInfo.h">
+      <Filter>Union\AllOnlinePlayerInfo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Check.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Event.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_ItemProc.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_NetFunction.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Normal.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Save.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Script.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Search.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Setting.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_STFunc.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Utility.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+    <None Include="..\..\Libraries\Union\RoleData\RD_ValueCal.inl">
+      <Filter>Union\RoleData</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MasterServer.rc" />
+  </ItemGroup>
+</Project>

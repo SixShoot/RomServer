@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{138fa123-d60f-483b-ad0e-99e4269cd96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainProc">
+      <UniqueIdentifier>{b4acbede-ddea-4eb3-b75b-7f408124706d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union">
+      <UniqueIdentifier>{3e759c57-fd10-420d-ada4-4229fb5b34d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\NetWaker">
+      <UniqueIdentifier>{d8fc3687-a522-4347-a1cf-7fb02fff794c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GatewayCallBack.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayClass.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayMainClass.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoardCmd.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManage.cpp">
+      <Filter>MainProc</Filter>
+    </ClCompile>
+    <ClCompile Include="WakerGateway.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayClass.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayMainClass.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoardCmd.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManage.h">
+      <Filter>MainProc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackage.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackageDef.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WakerGateway.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

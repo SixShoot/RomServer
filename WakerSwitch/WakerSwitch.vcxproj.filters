@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AccountAgent_Cli">
+      <UniqueIdentifier>{9589c151-dbd5-45f1-af94-fc99785eb3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ServerList_SCli">
+      <UniqueIdentifier>{4d50c3fd-ae8f-4229-95b6-01a00596fc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Union">
+      <UniqueIdentifier>{bcc1137c-66a9-4a4e-b1bd-711ab175e6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Union\NetWaker">
+      <UniqueIdentifier>{ebc644e4-0e05-48bd-bb28-8dc5dac6f99e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KeyBoardCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchAccountCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchClientCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchGatewayCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchGServerCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchMainClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchProxyCallBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WakerSwitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent_Cli\AccountCliclass.cpp">
+      <Filter>Source Files\AccountAgent_Cli</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList_SCli\ServerListSCliclass.cpp">
+      <Filter>Source Files\ServerList_SCli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.cpp">
+      <Filter>Union\NetWaker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeyBoardCmd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchClass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchMainClass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Cli\AccountCliclass.h">
+      <Filter>Source Files\AccountAgent_Cli</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Cli\AccountPackage.h">
+      <Filter>Source Files\AccountAgent_Cli</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Cli\AccountPackageDef.h">
+      <Filter>Source Files\AccountAgent_Cli</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList_SCli\ServerListPackage.h">
+      <Filter>Source Files\ServerList_SCli</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList_SCli\ServerListPackageDef.h">
+      <Filter>Source Files\ServerList_SCli</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList_SCli\ServerListSCliclass.h">
+      <Filter>Source Files\ServerList_SCli</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackage.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackageDef.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.h">
+      <Filter>Union\NetWaker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WakerSwitch.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

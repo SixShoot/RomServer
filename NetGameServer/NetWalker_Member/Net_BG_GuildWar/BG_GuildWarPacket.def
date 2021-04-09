@@ -1,0 +1,276 @@
+公會戰界面開啟
+Client -> Local 開啟註冊公會戰介面
+Local ->BLocal 	要求公會戰資訊
+BLocal -> Local 公會戰開啟狀況
+Local -> Client	開啟註冊公會戰介面
+
+//註冊 或 取消
+Client -> Local 註冊公會戰( or 取消 )
+Local -> BLocal 註冊公會戰( or 取消 )
+BLoal -> Local 註冊公會戰( or 取消 )結果
+Local -> Client 註冊公會戰( or 取消 )結果
+
+//通知公會戰狀況
+BLocal -> Local 公會戰狀況( 開始 , 準備 , 結束 )
+Local -> Client 公會戰狀況( 開始 , 準備 , 結束 )
+
+//載入公會資料
+BLocal -> Local 要求公會屋資料(取zone401的資料)
+Local -> BLocal 公會屋建築資料
+Local -> BLocal 公會屋家具資料
+Local -> BLocal 公會屋資料讀取完畢
+
+//進入公會戰
+Client -> Local 要求進入公會戰場
+Local -> BLocal 要求進入
+BLocal -> Local 要求進入結果
+Local -> Client 要求進入結果
+
+//離開公會戰
+Client -> BLocal  要求離開公會戰場
+BLocal -> Client  要求離開公會戰場結果
+
+
+
+
+
+
+#PacketHead		= BG_GuildWar
+///////////////////////////////////////////////////////////////////////////
+//要求跨伺服器 公會名稱
+#Note	= 要求跨伺服器公會名稱要求
+#Layer	= 1
+#Name	= CtoBL_GuildNameRequest
+#Begin	
+	int		WorldGuildID;
+#End
+
+#Note	= 要求跨伺服器公會名稱要求
+#Layer	= 2
+#Name	= BLtoL_GuildNameRequest
+#Begin
+	int	PlayerDBID;
+	int	WorldGuildID;
+#End
+
+#Note	= 要求跨伺服器公會名稱結果
+#Layer	= 3
+#Name	= LtoBL_GuildNameResult
+#Begin
+	int	PlayerDBID;
+	int	WorldGuildID;
+	StaticString<_MAX_NAMERECORD_SIZE_>   GuildName;	
+#End
+
+#Note	= 要求跨伺服器公會名稱結果
+#Layer	= 4
+#Name	= BLtoC_GuildNameResult
+#Begin
+	int	WorldGuildID;
+	StaticString<_MAX_NAMERECORD_SIZE_>   GuildName;	
+#End
+
+///////////////////////////////////////////////////////////////////////////
+//公會戰界面開啟
+#Note	= 開啟註冊公會戰介面
+#Layer	= 1
+#Name	= CtoL_OpenMenuRequest
+#Begin	
+#End
+
+#Note	= 要求公會戰資訊
+#Layer	= 2
+#Name	= LtoBL_OpenMenuRequest
+#Begin	
+	int PlayerDBID;
+#End
+
+#Note	= 公會戰開啟狀況
+#Layer	= 3
+#Name	= BLtoL_OpenMenuResult
+#Begin
+	int PlayerDBID;	
+	GuildHouseWarStateENUM	State;
+	int						Count;
+	GuildHouseWarInfoStruct List[1000];
+#End
+
+Local -> Client	開啟註冊公會戰介面
+#Note	= 開啟註冊公會戰介面
+#Layer	= 4
+#Name	= LtoC_OpenMenuResult
+#Begin
+	int PlayerDBID;	
+	GuildHouseWarStateENUM	State;
+	int						Count;
+	GuildHouseWarInfoStruct List[1000];
+#End
+
+///////////////////////////////////////////////////////////////////////////
+//註冊 或 取消註冊
+#Note	= 註冊公會戰( or 取消 )
+#Layer	= 1
+#Name	= CtoL_RegisterRequest
+#Begin	
+	GuildWarRegisterTypeENUM Type;
+#End
+
+
+#Note	= 註冊公會戰( or 取消 )
+#Layer	= 2
+#Name	= LtoBL_RegisterRequest
+#Begin
+	int	GuildID;
+	int Score;
+	StaticString< _MAX_NAMERECORD_SIZE_ > GuildName;	
+	GuildWarRegisterTypeENUM Type;
+#End
+
+
+#Note	= 註冊公會戰( or 取消 )結果
+#Layer	= 3
+#Name	= BLtoL_RegisterResult
+#Begin
+	int		GuildID;
+	GuildWarRegisterTypeENUM Type;
+	GuildHouseWarInfoStruct Info;
+	bool	Result;
+#End
+
+Local -> Client 註冊公會戰( or 取消 )結果
+#Note	= 註冊公會戰( or 取消 )結果
+#Layer	= 4
+#Name	= LtoC_RegisterResult
+#Begin
+	GuildWarRegisterTypeENUM Type;
+	GuildHouseWarInfoStruct Info;
+	bool	Result;
+#End
+
+///////////////////////////////////////////////////////////////////////////
+//通知公會戰狀況
+#Note	= 公會戰狀況( 開始 , 準備 , 結束 )
+#Layer	= 1
+#Name	= BLtoL_Status
+#Begin
+	GuildWarStatusTypeENUM Status;
+#End
+
+#Note	= 公會戰狀況( 開始 , 準備 , 結束 )
+#Layer	= 2
+#Name	= LtoC_Status
+#Begin
+	GuildWarStatusTypeENUM Status;
+#End
+
+
+///////////////////////////////////////////////////////////////////////////
+//載入公會資料
+
+#Note	= 要求公會屋資料(取zone401的資料)
+#Layer	= 1
+#Name	= BLtoL_HouseLoadRequest
+#Begin
+	int		GuildID;
+#End
+
+
+#Note	= 公會屋基本資料
+#Layer	= 2
+#Name	= LtoBL_HouseBaseInfo
+#Begin
+	GuildHousesInfoStruct HouseBaseInfo;
+#End
+
+
+#Note	= 公會屋建築資料
+#Layer	= 2
+#Name	= LtoBL_HouseBuildingInfo
+#Begin
+	GuildHouseBuildingInfoStruct Building;
+#End
+
+
+#Note	= 公會屋家具資料
+#Layer	= 2
+#Name	= LtoBL_HouseFurnitureInfo
+#Begin
+	GuildHouseFurnitureItemStruct Item;
+#End
+
+#Note	= 公會屋資料讀取完畢
+#Layer	= 2
+#Name	= LtoBL_HouseLoadOK
+#Begin
+	int	GuildID;
+#End
+
+
+
+///////////////////////////////////////////////////////////////////////////
+//進入公會戰
+#Note	= 要求進入公會戰場
+#Layer	= 1
+#Name	= CtoL_EnterRequest
+#Begin
+#End
+
+#Note	= 要求進入公會戰場
+#Layer	= 2
+#Name	= LtoBL_EnterRequest
+#Begin
+	int PlayerDBID;
+	int GuildID;
+#End
+
+#Note	= 要求進入結果
+#Layer	= 3
+#Name	= BLtoL_EnterResult
+#Begin
+	int PlayerDBID;
+	int GuildID;
+	bool Result;
+#End
+
+#Note	= 要求進入結果
+#Layer	= 4
+#Name	= LtoC_EnterResult
+#Begin
+	bool Result;
+#End
+
+///////////////////////////////////////////////////////////////////////////
+//離開公會戰
+#Note	= 要求離開公會戰場
+#Layer	= 1
+#Name	= CtoBL_LeaveRequest
+#Begin
+#End
+
+#Note	= 要求離開公會戰場結果
+#Layer	= 1
+#Name	= BLtoC_LeaveResult
+#Begin
+	bool Result;
+#End
+///////////////////////////////////////////////////////////////////////////
+#Note	= 公會戰績分資訊
+#Layer	= 1
+#Name	= BLtoC_GuildScore
+#Begin
+	GuildHouseWarFightStruct Info;
+#End
+
+#Note	= 公會戰開始
+#Layer	= 1
+#Name	= BLtoC_BeginWar
+#Begin
+#End
+
+#Note	= 公會戰結束
+#Layer	= 1
+#Name	= BLtoC_EndWar
+#Begin
+#End
+
+///////////////////////////////////////////////////////////////////////////

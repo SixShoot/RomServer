@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{1b5f445b-1b88-4633-a490-0d4120f95c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{709868de-dfba-41a8-8980-975af9ae9a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{cf8fae9c-9aa7-4414-9596-e6392da03a57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerXML.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Monitor.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectInstaller.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLSerialization.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ClrUtils.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="verinfo.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerXML.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitor.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectInstaller.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLSerialization.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ClrUtils.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="verinfo.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

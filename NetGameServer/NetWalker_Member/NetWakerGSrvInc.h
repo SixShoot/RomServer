@@ -1,0 +1,56 @@
+#ifndef __NETWAKERINC_H__
+#define __NETWAKERINC_H__
+
+#include "../MainProc/Global.h"
+#include "PG/NetWakerPGEnum.h"
+
+#include "Net_CliConnect/NetSrv_CliConnectChild.h"
+#include "Net_Move/NetSrv_MoveChild.h"
+#include "Net_ChannelBase/NetSrv_ChannelBaseChild.h"
+#include "Net_ChannelBase/Net_OnlinePlayerChild.h"
+#include "Net_Talk/NetSrv_TalkChild.h"
+#include "Net_ServerList/Net_ServerList_Child.h"
+#include "Net_DCBase/Net_DCBaseChild.h"
+#include "Net_PartitionBase/NetSrv_PartBaseChild.h"
+#include "Net_ZoneStatus/NetSrv_ZoneStatus_Child.h"
+#include "Net_PartExchangeData/NetSrv_PartExchangeDataChild.h"
+#include "Net_Item/NetSrv_ItemChild.h"
+#include "Net_EQ/NetSrv_EQChild.h"
+#include "Net_RoleValue/NetSrv_RoleValueChild.h"
+#include "Net_Attack/NetSrv_AttackChild.h"
+#include "Net_Trade/NetSrv_TradeChild.h"
+#include "Net_Magic/NetSrv_MagicChild.h"
+#include "Net_Script/NetSrv_Script_Child.h"
+#include "Net_GMTools/NetSrv_GMToolsChild.h"
+#include "Net_Shop/NetSrv_ShopChild.h"
+#include "Net_Party/NetSrv_PartyChild.h"
+#include "Net_Other/NetSrv_OtherChild.h"
+#include "Net_FriendList/NetSrv_FriendListChild.h"
+#include "Net_Mail/NetSrv_MailChild.h"
+#include "Net_AC/NetSrv_ACChild.h"
+//#include "Net_PlayerInfo/NetSrv_PlayerInfoChild.h"
+#include "Net_Recipe/NetSrv_RecipeChild.h"
+#include "Net_Guild/NetSrv_GuildChild.h"
+#include "Net_Gather/NetSrv_Gather_Child.h"
+#include "Net_Bot/NetSrv_BotChild.h"
+#include "Net_Billboard/NetSrv_BillboardChild.h"
+#include "Net_PK/NetSrv_PKChild.h"
+#include "Net_Lottery/NetSrv_LotteryChild.h"
+#include "Net_Houses/NetSrv_HousesChild.h"
+#include "net_DepartmentStore/NetSrv_DepartmentStoreChild.h"
+#include "Net_ImportBoard/NetSrv_ImportBoardChild.h"
+
+#include "Net_Teleport/NetSrv_TeleportChild.h"
+#include "Net_Treasure/NetSrv_TreasureChild.h"
+#include "Net_GuildHouses/NetSrv_GuildHousesChild.h"
+#include "Net_CultivatePet/NetSrv_CultivatePetChild.h"
+#include "Net_GuildHousesWar/NetSrv_GuildHousesWarChild.h"
+#include "Net_BG_GuildWar/NetSrv_BG_GuildWarChild.h"
+#include "Net_InstanceReset/NetSrv_InstanceChild.h"
+#include "Net_BattleGround/NetSrv_BattleGround_Child.h"		// BattleGround
+#include "Net_Festival/NetSrv_FestivalChild.h"				//Festival
+#include "Net_PublicEncounter/NetSrv_PublicEncounterChild.h"//Public Encounter
+#include "Net_Billing/Net_BillingChild.h"
+#include "Net_Login/Net_LoginChild.h"
+
+#endif //__NETWAKERINC_H__

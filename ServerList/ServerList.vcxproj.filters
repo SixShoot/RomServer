@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ServerList">
+      <UniqueIdentifier>{599ed608-dc56-458b-8990-9cccdc74cdaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IAccountPlugin">
+      <UniqueIdentifier>{4ba5304c-9bd0-4b6c-84af-8f6882186e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccountAgent_Srv">
+      <UniqueIdentifier>{704a7e5b-4c82-4f83-9d76-696d8727a9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccountManage">
+      <UniqueIdentifier>{5f1a5913-b738-4e33-8a00-521c1279999f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ServerList\KeyBoardCmd.cpp">
+      <Filter>ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList\ServerListMainclass.cpp">
+      <Filter>ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList\ServerListSrvclass.cpp">
+      <Filter>ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList\ServerListSrvDef.Cpp">
+      <Filter>ServerList</Filter>
+    </ClCompile>
+    <ClCompile Include="iaccountplugin\AccountBaseDef.cpp">
+      <Filter>IAccountPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="IAccountPlugin\IAccountPlugin.cpp">
+      <Filter>IAccountPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAgent_Srv\AccountSrvDef.Cpp">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountManage\AccountManage.cpp">
+      <Filter>AccountManage</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ServerList\KeyBoardCmd.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList\ServerListMainclass.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList\ServerListPackage.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList\ServerListPackageDef.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList\ServerListSrvclass.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList\ServerListSrvDef.h">
+      <Filter>ServerList</Filter>
+    </ClInclude>
+    <ClInclude Include="iaccountplugin\AccountBaseDef.h">
+      <Filter>IAccountPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="IAccountPlugin\IAccountPlugin.h">
+      <Filter>IAccountPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountPackage.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountPackageDef.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAgent_Srv\AccountSrvDef.h">
+      <Filter>AccountAgent_Srv</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountManage\AccountManage.h">
+      <Filter>AccountManage</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ServerList.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServerList.rc" />
+  </ItemGroup>
+</Project>

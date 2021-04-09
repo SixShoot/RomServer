@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86F6F020-46F0-4D47-8307-BDC11D15DDEC}</ProjectGuid>
+    <RootNamespace>ChatServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Chat</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29911.84</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\_bin\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>..\..\_build\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\Libraries;..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;..\..\Libraries\Tools\tools;$(ProjectDir);..\..\Libraries\Union;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CHAT_SERVER_;RU_USEDEFAULTALLOCATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>symstore add /r /f "$(TargetDir)*.*" /t "$(TargetName)" /s "$(ProjectDir)..\..\_symbols"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Libraries;..\..\SDK;..\..\SDK\dx9;..\..\SDK\fmod;..\..\SDK\lua;..\..\Libraries\Tools\tools;$(ProjectDir);..\..\Libraries\Union;..\..\Libraries\Tools\tools\luabind;..\..\Libraries\Tools\tools\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CHAT_SERVER_;RU_USEDEFAULTALLOCATOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\SDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Libraries\Union\AllOnlinePlayerInfo\AllOnlinePlayerInfo.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\GSrvNetWake.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\GSrvNetWakerClass.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerProxyCallback.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\NetWaker\NetWakerSwitchCallback.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\CampStatute.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\ObjectDataClass.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\ObjectStructEx.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Check.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Event.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_ItemProc.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_NetFunction.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Normal.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Save.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Script.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Search.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Setting.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_STFunc.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_Utility.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RD_ValueCal.cxx" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleAttr.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleData.cpp" />
+    <ClCompile Include="..\..\Libraries\Union\RoleData\RoleDataEx.cpp" />
+    <ClCompile Include="ChatServer.cpp" />
+    <ClCompile Include="MainProc\BaseItemObject\M_BaseItemObject.cpp" />
+    <ClCompile Include="MainProc\Global.cpp" />
+    <ClCompile Include="MainProc\GlobalBase.cpp" />
+    <ClCompile Include="MainProc\GroupObject\GroupObject.cpp" />
+    <ClCompile Include="MainProc\GroupParty\GroupParty.cpp" />
+    <ClCompile Include="MainProc\GroupPlayerChannel\GroupPlayerChannel.cpp" />
+    <ClCompile Include="MainProc\GroupZoneChannel\GroupZoneChannel.cpp" />
+    <ClCompile Include="MainProc\KeyBoardCmd.cpp" />
+    <ClCompile Include="MainProc\LuaPlot\LuaPlot.cpp" />
+    <ClCompile Include="MainProc\OutputMsgManager\OutputMsgManager.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\NetChat_ChannelBase.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\NetChat_ChannelBaseChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayer.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayerChild.cpp" />
+    <ClCompile Include="NetWalker_Member\net_dcbase\Net_DCBase.cpp" />
+    <ClCompile Include="NetWalker_Member\net_dcbase\Net_DCBaseChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_FriendList\NetChat_FriendList.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_FriendList\NetChat_FriendListChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_GlobalInfo\NetSrv_GlobalInfo.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_GlobalInfo\NetSrv_GlobalInfoChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_GMTools\NetSrv_GMTools.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_GMTools\NetSrv_GMToolsChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_Party\NetChat_Party.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_Party\NetChat_PartyChild.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ServerList\Net_ServerList.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ServerList\Net_ServerList_Child.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_ServerList\Net_ServerList_Child_Chat.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_Talk\NetChat_Talk.cpp" />
+    <ClCompile Include="NetWalker_Member\Net_Talk\NetChat_TalkChild.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Libraries\Union\AllOnlinePlayerInfo\AllOnlinePlayerInfo.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\GSrvNetWaker.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\GSrvNetWakerClass.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerDefine.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackage.h" />
+    <ClInclude Include="..\..\Libraries\Union\NetWaker\NetWakerPackageDef.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\NetWakerPGEnum.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_AC.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Attack.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BattleGround.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BG_GuildWar.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BG_GuildWarDef.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Billboard.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Billing.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Bot.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_BTI.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ChannelBase.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_CliConnect.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_CultivatePet.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_DCBase.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_DepartmentStore.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_EQ.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Festival.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_FriendList.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Gather.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GlobalInfo.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GMTools.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GMToolsStruct.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Guild.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GuildHouses.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_GuildHousesWar.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Houses.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ImportBoard.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Instance.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Item.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_DynamicBuffer.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_PackageBufferInfo.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_PackageDefine_Auto.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_LCBase_StaticBuffer.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Login.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Lottery.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Magic.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Mail.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Move.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Other.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PartExchangeData.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PartitionBase.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Party.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PK.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_PublicEncounter.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Recipe.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_RoleValue.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Script.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ServerList.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Shop.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_SmallGame.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Talk.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Teleport.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Trade.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_Treasure.h" />
+    <ClInclude Include="..\..\Libraries\Union\PG\PG_ZoneStatus.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\CampStatute.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectDataClass.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectStruct.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\ObjectStructEx.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleAttr.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleBaseDef.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleBaseInc.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleData.h" />
+    <ClInclude Include="..\..\Libraries\Union\RoleData\RoleDataEx.h" />
+    <ClInclude Include="MainProc\BaseItemObject\M_BaseItemObject.h" />
+    <ClInclude Include="MainProc\Global.h" />
+    <ClInclude Include="MainProc\GlobalBase.h" />
+    <ClInclude Include="MainProc\GroupObject\GroupObject.h" />
+    <ClInclude Include="MainProc\GroupParty\GroupParty.h" />
+    <ClInclude Include="MainProc\GroupPlayerChannel\GroupPlayerChannel.h" />
+    <ClInclude Include="MainProc\GroupZoneChannel\GroupZoneChannel.h" />
+    <ClInclude Include="MainProc\KeyBoardCmd.h" />
+    <ClInclude Include="MainProc\LuaPlot\LuaPlot.h" />
+    <ClInclude Include="MainProc\OutputMsgManager\OutputMsgManager.h" />
+    <ClInclude Include="NetWalker_Member\NetWakerChatInc.h" />
+    <ClInclude Include="NetWalker_Member\NetWakerPGEnum.h" />
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\NetChat_ChannelBase.h" />
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\NetChat_ChannelBaseChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayer.h" />
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\Net_OnlinePlayerChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_ChannelBase\PG_ChannelBase.h" />
+    <ClInclude Include="NetWalker_Member\net_dcbase\Net_DCBase.h" />
+    <ClInclude Include="NetWalker_Member\net_dcbase\Net_DCBaseChild.h" />
+    <ClInclude Include="NetWalker_Member\net_dcbase\PG_DCBase.h" />
+    <ClInclude Include="NetWalker_Member\Net_FriendList\NetChat_FriendList.h" />
+    <ClInclude Include="NetWalker_Member\Net_FriendList\NetChat_FriendListChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_FriendList\PG_FriendList.h" />
+    <ClInclude Include="NetWalker_Member\Net_GlobalInfo\NetSrv_GlobalInfo.h" />
+    <ClInclude Include="NetWalker_Member\Net_GlobalInfo\NetSrv_GlobalInfoChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_GlobalInfo\PG_GlobalInfo.h" />
+    <ClInclude Include="NetWalker_Member\Net_GMTools\NetSrv_GMTools.h" />
+    <ClInclude Include="NetWalker_Member\Net_GMTools\NetSrv_GMToolsChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_GMTools\PG_GMTools.h" />
+    <ClInclude Include="NetWalker_Member\Net_GMTools\PG_GMToolsStruct.h" />
+    <ClInclude Include="NetWalker_Member\Net_Party\NetChat_Party.h" />
+    <ClInclude Include="NetWalker_Member\Net_Party\NetChat_PartyChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_Party\PG_Party.h" />
+    <ClInclude Include="NetWalker_Member\Net_ServerList\Net_ServerList.h" />
+    <ClInclude Include="NetWalker_Member\Net_ServerList\Net_ServerList_Child.h" />
+    <ClInclude Include="NetWalker_Member\Net_ServerList\PG_ServerList.h" />
+    <ClInclude Include="NetWalker_Member\Net_Talk\NetChat_Talk.h" />
+    <ClInclude Include="NetWalker_Member\Net_Talk\NetChat_TalkChild.h" />
+    <ClInclude Include="NetWalker_Member\Net_Talk\PG_Talk.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ChatServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Rune Engine\Rune Engine NULL.vcxproj">
+      <Project>{d9651cd4-61bd-4550-8a87-3a1b978d4af4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Rune Engine\Rune Engine.vcxproj">
+      <Project>{3b228c0f-2a1f-4fa9-80d7-d0219e428dd3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Tools\ToolsLib.vcxproj">
+      <Project>{0c5fe08b-f36a-4655-8247-2e11fabd7722}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Libraries\Union\RoleData\RD_Check.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Event.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_ItemProc.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_NetFunction.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Normal.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Save.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Script.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Search.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Setting.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_STFunc.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_Utility.inl" />
+    <None Include="..\..\Libraries\Union\RoleData\RD_ValueCal.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
