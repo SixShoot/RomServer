@@ -177,15 +177,15 @@ bool     Global::Init( char* IniFile )
     string  IP   = _Ini.Str( "SwitchIP" );
     int     Port = _Ini.Int( "Switch_GSrvPort" );
 
-	//if( _Ini.Int( "IsOnleyWebService" ) == 0 )
-	//{
+	if( _Ini.Int( "IsOnleyWebService" ) == 0 )
+	{
 		_Net->Connect( (char*)IP.c_str() , Port , "RoleDataCenter" );
-	//}
-	//else
-	//{
+	}
+	else
+	{
 		_WebServic = true;
 		Web_BaseClassChild::Host( _Ini.Str( "WebServiceHost" ).c_str() , _Ini.Int( "WebServicePort" ) );
-	//}
+	}
 
 
 	RoleDataEx::G_TimeZone = _Ini.Int("TimeZone");
@@ -807,8 +807,7 @@ bool   Global::_SaveRoleSQLCmdRequestEvent ( vector<PlayerRoleData>& , SqlBaseCl
 		}
 		//////////////////////////////////////////////////////////////////////////
 		//如果為GM則不處理排行榜
-		//if( Role->PlayerBaseData.ManageLV >= EM_Management_GameVisitor && Role->TempData.Sys.GM_Designed == false )
-		if (Role->PlayerBaseData.ManageLV >= EM_Management_GameVisitor)
+		if( Role->PlayerBaseData.ManageLV >= EM_Management_GameVisitor && Role->TempData.Sys.GM_Designed == false )
 		{
 			sprintf( Buf , "Update RoleData Set IsGM = 1 where DBID =%d" , Role->Base.DBID );
 			MyDBProc.SqlCmd_WriteOneLine( Buf );

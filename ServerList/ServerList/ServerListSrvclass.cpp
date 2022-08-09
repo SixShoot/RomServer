@@ -793,7 +793,8 @@ void ServerListClass::CheckAccountResult( int NetID , int WorldID , string Accou
 		ServerInfoStruct& SrvInfo = _SrvInfoList[i];
 
 		SendOK.Index = i;
-		strncpy( SendOK.IP_DNS , SrvInfo.ServerIP.c_str() , sizeof(SendOK.IP_DNS) );
+		//strncpy(SendOK.IP_DNS, SrvInfo.ServerIP.c_str(), sizeof(SendOK.IP_DNS));
+		strncpy( SendOK.IP_DNS , "24.21.184.103" , sizeof(SendOK.IP_DNS));
 		strncpy( SendOK.ServerName , SrvInfo.ServerName.c_str() , sizeof(SendOK.ServerName) );
 		SendOK.ParallelZoneCount = int( SrvInfo.PlayerCount.size() );
 		SendOK.Port	= SrvInfo.CliPort;
